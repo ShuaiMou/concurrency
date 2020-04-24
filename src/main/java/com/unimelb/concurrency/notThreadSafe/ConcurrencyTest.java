@@ -1,6 +1,6 @@
-package com.mmall.concurrency;
+package com.unimelb.concurrency.notThreadSafe;
 
-import com.mmall.concurrency.annoations.NotThreadSafe;
+import com.unimelb.concurrency.annotations.NotThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.CountDownLatch;
