@@ -1,4 +1,4 @@
-package com.mmall.concurrency.example.aqs;
+package com.unimelb.concurrency.aqs;
 
 import lombok.extern.slf4j.Slf4j;
 

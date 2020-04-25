@@ -1,4 +1,4 @@
-package com.mmall.concurrency.example.aqs;
+package com.unimelb.concurrency.aqs;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -36,7 +36,7 @@ public class CyclicBarrierExample2 {
         try {
             barrier.await(2000, TimeUnit.MILLISECONDS);
         } catch (Exception e) {
-            log.warn("BarrierException", e);
+            log.warn("BarrierException");
         }
         log.info("{} continue", threadNum);
     }
