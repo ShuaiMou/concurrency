@@ -1,6 +1,7 @@
-package com.mmall.concurrency.example.commonUnsafe;
+package com.unimelb.concurrency.commonUnsafe;
 
-import com.mmall.concurrency.annoations.ThreadSafe;
+import com.unimelb.concurrency.annotations.Recommend;
+import com.unimelb.concurrency.annotations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
@@ -13,6 +14,7 @@ import java.util.concurrent.Semaphore;
 
 @Slf4j
 @ThreadSafe
+@Recommend
 public class DateFormatExample3 {
 
     // 请求总数

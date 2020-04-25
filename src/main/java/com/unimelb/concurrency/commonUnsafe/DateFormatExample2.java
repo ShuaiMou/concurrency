@@ -1,9 +1,10 @@
-package com.mmall.concurrency.example.commonUnsafe;
+package com.unimelb.concurrency.commonUnsafe;
 
-import com.mmall.concurrency.annoations.ThreadSafe;
+import com.unimelb.concurrency.annotations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -40,9 +41,11 @@ public class DateFormatExample2 {
     }
 
     private static void update() {
+        //局部变量实现线程封闭
         try {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd");
-            simpleDateFormat.parse("20180208");
+            Date parse = simpleDateFormat.parse("20180208");
+            System.out.println(parse);
         } catch (Exception e) {
             log.error("parse exception", e);
         }
